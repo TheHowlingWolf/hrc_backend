@@ -11,7 +11,7 @@ const memberRoute = require("./routes/member");
 //Connecting MongoDb
 mongoose
   .connect(
-    "mongodb+srv://Helsinki:Helsinki123@cluster0-lr7du.mongodb.net/test?retryWrites=true&w=majority",
+    "mongodb+srv://Helsinki:Helsinki123@cluster0-oxii1.azure.mongodb.net/test?retryWrites=true&w=majority",
     {
       useCreateIndex: true,
       useUnifiedTopology: true,
