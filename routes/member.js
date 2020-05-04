@@ -39,4 +39,8 @@ router.get("/product/h3_photo/:userId", h3_photo);
 router.get("/members", getAllMembers);
 router.get("/members/:userId", getOneMember);
 
+router.get("/check", (req, res) => {
+  res.send(<h1> Testing 100</h1>);
+});
+
 module.exports = router;
