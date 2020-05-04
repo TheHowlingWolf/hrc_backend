@@ -91,7 +91,6 @@ exports.getAllMembers = async (req, res) => {
     .find()
     .select("name _id") //to get specific fields we can list all names or use - (minus prefix) with names to rule out that field since calls to photos is time consuming hence ruling it out
     .sort([["roll", "asc"]]) //Sort by filter will be set from frontend by which Member will be sort
-    .limit(10)
     .exec((err, Members) => {
       if (err) {
         return res.status(400).json({
