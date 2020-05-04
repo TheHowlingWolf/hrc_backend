@@ -12,6 +12,7 @@ const memberSchema = new mongoose.Schema(
       type: Number,
       maxlength: 7,
       required: true,
+      unique: true,
     },
     state: {
       type: String,
