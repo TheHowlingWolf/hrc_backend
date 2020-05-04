@@ -6,7 +6,8 @@ const app = express();
 
 //Routes
 const memberRoute = require("./routes/member");
-
+//mongodb://localhost:27017/Store
+//"mongodb+srv://Helsinki:Helsinki123@cluster0-lr7du.mongodb.net/test?retryWrites=true&w=majority"
 //Connecting MongoDb
 mongoose
   .connect(
