@@ -27,17 +27,7 @@ exports.createMember = (req, res) => {
       fun_mem,
       emb_mem,
     } = fields;
-    if (
-      !name ||
-      !roll ||
-      !state ||
-      !about ||
-      !hob1 ||
-      !hob2 ||
-      !hob3 ||
-      !fun_mem ||
-      !emb_mem
-    ) {
+    if (!name || !roll || !state || !about || !hob1 || !hob2 || !hob3) {
       return res.status(400).json({
         error: "Please Include all fields",
       });

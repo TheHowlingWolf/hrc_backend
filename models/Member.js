@@ -62,12 +62,10 @@ const memberSchema = new mongoose.Schema(
     },
     fun_mem: {
       type: String,
-      required: true,
       trim: true,
     },
     emb_mem: {
       type: String,
-      required: true,
       trim: true,
     },
   },
